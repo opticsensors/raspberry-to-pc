@@ -1,7 +1,30 @@
-# daq_connectivity
-Explore various methods for interfacing with a Data Acquisition (DAQ) system, including USB and Ethernet connections
+# `rpi_connectivity`
+This repository contains the code necessary to send the data acquired using a DATAQ Instruments DAQ to a cloud service (Google Drive, OneDrive, ...) using a Raspberry Pi.
 
-# draft notes
+## Getting started
+
+Run the following command for clonning the repository from GitHub:
+
+```shell
+git clone https://github.com/opticsensors/raspberry-to-pc.git
+```
+
+Then, in the Raspberry Pi terminal run the following commands:
+
+1. Make sure  you have the latest version of pip and PyPA’s build installed:
+   ```shell
+   python3 pip install --upgrade pip
+   python3 pip install --upgrade build
+   ```
+
+3. Install additional packages using `clone`:
+    ```shell
+    git clone https://github.com/opticsensors/daq_connectivity.git
+    python3 pip install .     # run this in the repo directory
+    ```
+
+
+## draft notes
 pip install cannot be done directly on the rpi, we need to create a virtual env (note that sudo pip install or sudo python file.py cannot be used in venv):
 ```
 python3 -m venv ~/daq_env  # only the first time
