@@ -16,7 +16,7 @@ out_path = f'{remote_name}:Eurecat'
 date_name = str(datetime.datetime.now().date()) + '_' + str(datetime.datetime.now().time()).replace(':', '.')
 file_path = os.path.join(path_to_save, f'{date_name}.csv')
 
-usb = daq.Daq_serial(channels=[0,], voltage_ranges=[10,], dec=50, deca=1, srate=6000, output_mode=output_mode)
+usb = daq.Daq_serial(channels=[0,1,2,3], voltage_ranges=[10,], dec=50, deca=1, srate=6000, output_mode=output_mode)
 usb.config_daq()
 
 # this line is not necessary because remote is already created in setup script
