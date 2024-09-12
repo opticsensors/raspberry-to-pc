@@ -13,6 +13,5 @@ __pycache__/
 .cache
 
 # folders that contain images
-plots/
-results/
-data/
+/reults/*
+!/results/.gitkeep
