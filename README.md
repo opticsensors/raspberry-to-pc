@@ -1,7 +1,22 @@
 # `rpi_connectivity`
 This repository contains the code necessary to send the data acquired using a DATAQ Instruments DAQ to a cloud service (Google Drive, OneDrive, ...) using a Raspberry Pi.
 
+## Setup Raspberry Pi
+To copy files to cloud (tried only with google drive) we have to install first:
+
+```
+sudo apt install rclone
+```
+
+We create a virtual python enviroment for executing the code:
+```
+python3 -m venv ~/py_env           # to create venv
+source ~/daq_env/bin/activate      # to activate venv
+deactivate                         # to exit venv
+```
+
 ## Getting started
+
 
 Run the following command for clonning the repository from GitHub:
 

@@ -12,7 +12,11 @@ remote_name = 'test1'
 remote_type = 'drive'
 in_path = 'results'
 out_path = f'{remote_name}:Eurecat'
-list_of_remotes = daq.list_remotes()
+list_of_remotes = cloud.list_remotes()
+
+if list_of_remotes:
+    for e in list_of_remotes:
+        cloud.delete_remote(e)
 
 date_name = str(datetime.datetime.now().date()) + '_' + str(datetime.datetime.now().time()).replace(':', '.')
 file_path = os.path.join(path_to_save, f'{date_name}.csv')

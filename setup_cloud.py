@@ -1,6 +1,6 @@
 import cloud
 
-remote_name = 'first_remote'
+remote_name = 'rpi_remote'
 remote_type = 'drive'
 in_path = 'results'
 out_path = f'{remote_name}:Eurecat'
