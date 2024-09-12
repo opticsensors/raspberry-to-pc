@@ -13,5 +13,5 @@ __pycache__/
 .cache
 
 # folders that contain images
-/reults/*
-!/results/.gitkeep
+results/*
+!results/.gitkeep
