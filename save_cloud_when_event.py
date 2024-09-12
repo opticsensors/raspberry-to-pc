@@ -61,5 +61,6 @@ while True:
         df.to_csv(path_or_buf=file_path, sep=',', index=False)
         list_of_dict = []  # Reset the list for the next recording session
         cloud.copy_to_remote(in_path, out_path)
+        print('Done saving!')
 
     prev_M = M  # Update the previous state of M
