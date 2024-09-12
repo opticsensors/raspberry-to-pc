@@ -19,7 +19,8 @@ file_path = os.path.join(path_to_save, f'{date_name}.csv')
 usb = daq.Daq_serial(channels=[0,], voltage_ranges=[10,], dec=50, deca=1, srate=6000, output_mode=output_mode)
 usb.config_daq()
 
-cloud.create_remote(remote_name, remote_type)
+# this line is not necessary because remote is already created in setup script
+# cloud.create_remote(remote_name, remote_type)
 
 i = 0
 list_of_dict = []
